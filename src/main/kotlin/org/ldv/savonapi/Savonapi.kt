@@ -1,11 +1,11 @@
-package com.example.bdd
+package org.ldv.savonapi
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class BddApplication
+class Savonapi
 
 fun main(args: Array<String>) {
-	runApplication<com.example.bdd.BddApplication>(*args)
+	runApplication<org.ldv.savonapi.Savonapi>(*args)
 }

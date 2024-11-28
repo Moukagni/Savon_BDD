@@ -1,24 +1,24 @@
-package com.example.bdd.model.entity
+package org.ldv.savonapi.model.entity
 
 import jakarta.persistence.*
 
 @Entity
-class Ingrédient(
+class Ingredient(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    var id:Int? = null,
-    var corpsGras:String? = null,
-    var iode:Float,
-    var ins:Float,
+    var id:Long?,
+    var nom:String?=null,
     var sopa:Float,
+    var iode:Float,
+    var isn:Float,
     var douceur:Float,
     var lavant:Float,
     var volMousse:Float,
     var tenueMousse:Float,
     var durete:Float,
     var solubiliter:Float,
-    var sechage:Float
-
-) {
+    var sechage:Float,
+)
+{
 
 }

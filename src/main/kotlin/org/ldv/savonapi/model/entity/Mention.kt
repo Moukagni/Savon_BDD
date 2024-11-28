@@ -1,4 +1,4 @@
-package com.example.bdd.model.entity
+package org.ldv.savonapi.model.entity
 
 import jakarta.persistence.*
 
@@ -11,8 +11,9 @@ class Mention (
     var soreMin:Float? = null,
     var scoreMax:Float? = null,
 
-    @ManyToMany(mappedBy = "mention")
-    var caractéristique: MutableList<com.example.bdd.model.entity.Caractéristique>? = mutableListOf()
+    @ManyToOne
+    @JoinColumn(name = "caracteristique_id")
+    var caracteristique: Caracteristique? = null
 
 
  ){

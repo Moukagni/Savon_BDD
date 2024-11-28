@@ -1,4 +1,4 @@
-package com.example.bdd.model.entity
+package org.ldv.savonapi.model.entity
 
 import jakarta.persistence.*
 
@@ -7,6 +7,7 @@ import jakarta.persistence.*
 class Savon(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    var id:Long?,
     var nom:String,
     var type:String,
     var poids:Float,
